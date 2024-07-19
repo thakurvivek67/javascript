@@ -15,15 +15,38 @@
 
 //Arrow function provide a lexical this binding
 
-const obj = {
-    name: "vivek",
-    rollno: 33,
-    des: "hello",
-    vivek: function(){
-       setTimeout(()=>{
-          console.log(this.rollno);
-       })
-    },
-  };
-  console.log(obj.vivek());
+// const obj = {
+//     name: "vivek",
+//     rollno: 33,
+//     des: "hello",
+//     vivek: function(){
+//        setTimeout(()=>{
+//           console.log(this.rollno);
+//        })
+//     },
+//   };
+//   console.log(obj.vivek());
   
+//In Normal function this refers to object or scope in which it placed/ refers to the current context
+// const obj = {
+//    name: "vivek",
+//    rollno: 1212,
+//    des: "hello",
+//    vivek: function(){
+     
+//          console.log(this.rollno);
+//    },
+//  };
+//  console.log(obj.vivek());// it return rollno value
+
+ const obj = {
+   name: "vivek",
+   rollno: 1212,
+   des: "hello",
+   vivek: ()=>{
+     
+         console.log(this.rollno);
+   },
+ };
+ console.log(obj.vivek());// it return undefined
+ 
