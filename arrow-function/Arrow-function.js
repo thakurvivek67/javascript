@@ -39,14 +39,25 @@
 //  };
 //  console.log(obj.vivek());// it return rollno value
 
- const obj = {
-   name: "vivek",
-   rollno: 1212,
-   des: "hello",
-   vivek: ()=>{
+//  const obj = {
+//    name: "vivek",
+//    rollno: 1212,
+//    des: "hello",
+//    vivek: ()=>{
      
-         console.log(this.rollno);
-   },
- };
- console.log(obj.vivek());// it return undefined
+//          console.log(this.rollno);
+//    },
+//  };
+//  console.log(obj.vivek());// it return undefined
  
+//ReferenceError: Cannot access 'vivek' before initialization
+// vivek();
+// const vivek=()=>{
+//    console.log("hello")
+// }
+
+// In this code function vivek is hoisted at top so it give hello
+vivek();
+function vivek(){
+   console.log("hello")
+}
