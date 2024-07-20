@@ -56,8 +56,9 @@
 //    console.log("hello")
 // }
 
-// In this code function vivek is hoisted at top so it give hello
-vivek();
-function vivek(){
-   console.log("hello")
-}
+// In this code function vivek is hoisted at top so it give
+// vivek();
+// function vivek(){
+//    console.log("hello")
+// }
+ 
